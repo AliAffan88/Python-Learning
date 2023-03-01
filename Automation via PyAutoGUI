@@ -1,0 +1,30 @@
+pip install pyautogui 
+import pyautogui as pg
+print('Program to like 5 videos of youtube channel',f"where screen resolution is {pg.size()}") # screen resolution was 1600,900
+# MAIN PROGRAM STARTS HERE
+
+pg.moveTo(193,883, duration = 0.5)
+pg.click(193,883, duration = 0.5)
+pg.PAUSE = 1.5
+pg.typewrite('Google Chrome')
+pg.typewrite(['Enter']) #or pg.keyDown('Enter')
+pg.click(635,53, duration = 0.75)
+pg.typewrite('https://www.youtube.com/@enggqasim')
+pg.keyDown('Enter')
+pg.moveTo(692,466, duration = 2) # to view playlist
+pg.click(692,466)
+pg.click(1032,621, duration = 0.5) # to view metaverse album
+pg.click(759,796, duration = 1) # to like the video # 1
+pg.click(22,48, duration = 0.5) # to go to the playlist page
+pg.click(795,673, duration = 0.5) # to view Artificial Intelligence Trace (Python) album
+pg.click(809,771, duration = 1) # to like video # 2
+pg.click(1341,340, duration = 0.5) # to view video # 3
+pg.click(757,788, duration = 1) # to like video # 3
+pg.click(1307,411, duration = 0.5) # to view video # 4
+pg.click(799,734, duration = 1) # to like video # 4
+pg.click(1371,486, duration = 0.5) # to view video # 5
+pg.click(805,727, duration = 1) # to like video # 5
+pg.click(1591,1, duration = 0.5) # closing the window
+
+# Code to get the exact position of mouse cursor
+pg.position()
