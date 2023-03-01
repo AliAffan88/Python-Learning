@@ -1,6 +1,9 @@
 pip install pyautogui 
 import pyautogui as pg
-print('Program to like 5 videos of youtube channel',f"where screen resolution is {pg.size()}") # screen resolution was 1600,900
+
+pg.size() # To get the screen resolution
+print('Program to like 5 videos of youtube channel',f"where screen resolution is {pg.size()}") # screen resolution was 1920,1080
+
 # MAIN PROGRAM STARTS HERE
 
 pg.moveTo(193,883, duration = 0.5)
@@ -25,6 +28,7 @@ pg.click(799,734, duration = 1) # to like video # 4
 pg.click(1371,486, duration = 0.5) # to view video # 5
 pg.click(805,727, duration = 1) # to like video # 5
 pg.click(1591,1, duration = 0.5) # closing the window
+
 
 # Code to get the exact position of mouse cursor
 pg.position()
