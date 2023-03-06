@@ -1,0 +1,31 @@
+Program for concept of inheritance :
+
+class Inheritance():
+	def property(self):
+		print('owns a house')
+	def vehicles(self):
+	    print('owns a car and a bike')
+	    
+class Son(Inheritance):
+	def bicycle(self):
+		print('owns a bicycle')
+
+print("Details of Son1")
+Son1 = Son()
+Son1.property()
+Son1.vehicles()
+Son1.bicycle()
+
+print()
+print("Details of Son2")
+Son2 = Son()
+Son2.property()
+Son2.vehicles()
+Son2.bicycle()
+
+print()
+print('Details of Father')
+Father = Inheritance()
+Father.property()
+Father.vehicles()
+Father.bicycle() # This will generate error as bicycle was exclusively child's property.
