@@ -1,0 +1,16 @@
+# Example of Overriding(same method in different class : 
+# Child class is chirandi(stubborn) and will perform the method that it commits rather than obeying father's method)
+
+class Father:
+	def task_at_5PM(self):
+		print('Do your homework')
+	
+class Son(Father):
+	def task_at_5PM(self):
+		print('I will play cricket')
+		
+Son1 = Son()
+Son1.task_at_5PM()
+
+# OUTPUT:
+# I will play cricket
